@@ -8,7 +8,8 @@
   --text: #ffffff;
   --toggle-bg: #333;
 }
-body { background: var(--bg); color: var(--text); transition: .3s; }
+
+body { background: var(--bg); color: var(--text); transition: 1s; }
 
 .themeOptions {
     position: fixed;
@@ -29,18 +30,17 @@ body { background: var(--bg); color: var(--text); transition: .3s; }
     cursor: pointer; 
 }
 
-#themeToggle::before { 
+/* #themeToggle::before { 
     content: 'k'; 
     position: absolute; 
-    /* top: 2px; 
+    top: 2px; 
     left: 2px; 
     width: 22px; 
     height: 22px; 
-    background: white;  */
+    background: white; 
     border-radius: 50%; 
     transition: .3s;
-    /* check */
-}
+} */
 
 /* #themeToggle:checked::before { 
     transform: translateX(24px); 
