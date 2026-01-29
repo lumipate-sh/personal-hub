@@ -71,7 +71,7 @@ body {
     font-size: 16px;
     font-weight: 600;
     color: var(--text);
-    background-image: radial-gradient(var(--surface),var(--overlay));
+    background-image: radial-gradient(var(--base),var(--surface));
     line-height: 1.6;
     transition: 1s;
 }
@@ -108,7 +108,7 @@ h2 {
 }
 
 h3 {
-  color(--cyan);
+  color(--muted);
   font-family:'Press Start 2P';
 }
 a {
@@ -195,6 +195,7 @@ main {
 .column-right ul {
     list-style-type: disc;
     margin-left: 1.5rem;
+    background-color: var(--);
 }
 
 footer {
