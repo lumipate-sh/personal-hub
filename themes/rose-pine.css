@@ -4,66 +4,41 @@ https://github.com/rose-pine/rose-pine-palette/
 */
 
 
+
 :root {
-	--base: rgb(250, 244, 237);
-	--surface: rgb(255, 250, 243);
-	--overlay: rgb(242, 233, 222);
-	--muted: rgb(152, 147, 165);
-	--subtle: rgb(121, 117, 147);
-	--text: rgb(87, 82, 121);
-	--red: rgb(180, 99, 122);
-	--yellow: rgb(234, 157, 52);
-	--pink: rgb(215, 130, 126);
-	--blue: rgb(40, 105, 131);
-	--cyan: rgb(86, 148, 159);
-	--purple: rgb(144, 122, 169);
-	--highlight-low: rgb(244, 237, 232);
-	--highlight-med: rgb(223, 218, 217);
-	--highlight-high: rgb(206, 202, 205);
+    --bg:           #faf4ed;
+    --bg-alt:       #fffaf3; 
+    --fg:           #44415a;
+    --fg-alt:       #56526e;
+    --box:          #cecacd;
+    --head-high:    #b4637a;
+    --head-med:     #d7827e;
+    --head-low:     #ea9a97;
+    --text:         #575279;
+    --text-strong:  #907aa9;
+    --text-weak:    #797593;
+    --interact:     #3e8fb0;
+    --interact-alt: #56949f;
+    --important:    #b4637a;
+    --pop:          #ea9d34;
+    --accent:       #907aa9;
 }
+
 [data-theme="dark"] {
-	--base: rgb(35, 33, 54);
-	--surface: rgb(42, 39, 63);
-	--overlay: rgb(57, 53, 82);
-	--muted: rgb(110, 106, 134);
-	--subtle: rgb(144, 140, 170);
-	--text: rgb(224, 222, 244);
-	--red: rgb(235, 111, 146);
-	--yellow: rgb(246, 193, 119);
-	--pink: rgb(234, 154, 151);
-	--blue: rgb(62, 143, 176);
-	--cyan: rgb(156, 207, 216);
-	--purple: rgb(196, 167, 231);
-	--highlight-low: rgb(42, 40, 62);
-	--highlight-med: rgb(68, 65, 90);
-	--highlight-high: rgb(86, 82, 110);
-}
-
-
-
-
-.theme-rp {
-	--base: rgb(25, 23, 36);
-	--surface: rgb(31, 29, 46);
-	--overlay: rgb(38, 35, 58);
-	--muted: rgb(110, 106, 134);
-	--subtle: rgb(144, 140, 170);
-	--text: rgb(224, 222, 244);
-	--love: rgb(235, 111, 146);
-	--gold: rgb(246, 193, 119);
-	--rose: rgb(235, 188, 186);
-	--pine: rgb(49, 116, 143);
-	--foam: rgb(156, 207, 216);
-	--iris: rgb(196, 167, 231);
-	--highlight-low: rgb(33, 32, 46);
-	--highlight-med: rgb(64, 61, 82);
-	--highlight-high: rgb(82, 79, 103);
-}
-
-.theme-rp-moon {
-
-}
-
-.theme-rp-dawn {
-
+    --bg:           #232136;
+    --bg-alt:       #2a273f;
+    --fg:           #dfdad9;
+    --fg-alt:       #9893a5;
+    --box:          #56526e;
+    --head-high:    #eb6f92;
+    --head-med:     #ea9a97;
+    --head-low:     #ebbcba;
+    --text:         #e0def4;
+    --text-strong:  #c4a7e7;
+    --text-weak:    #908caa;
+    --interact:     #56949f;
+    --interact-alt: #9ccfd8;
+    --important:    #eb6f92;
+    --pop:          #f6c177;
+    --accent:       #c4a7e7;
 }
