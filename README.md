@@ -8,6 +8,7 @@ The website will use **GitHub Pages** for deployment while in the first stages o
 ## Contents
 - [x] basic personal information
 - [x] light / dark modes
+- [ ] change theme functionality
 - [ ] projects page
 - [ ] skills page 
 - [ ] tools page
@@ -15,7 +16,8 @@ The website will use **GitHub Pages** for deployment while in the first stages o
 ## Credits
 
 ### color themes 
-- [Rosé Pine](https://rosepinetheme.com/)
+- [Gruvbox](https://github.com/morhetz/gruvbox)
+- [Rosé Pine](https://rosepinetheme.com/) <- temporarily removed
 
 ### fonts
 - [**Press Start 2P**](https://zone38.net/font/#pressstart) by [Cody "CodeMan38" Boisclair](https://zone38.net/), licensed under [SIL Open Font License](https://openfontlicense.org/)   
