@@ -10,10 +10,19 @@
     <link href="style.css" type='text/css' media='screen' rel="stylesheet" />
 </head>
 <body>
-     <h1>PAGE UNDER CONSTRUCTION</h1>
+       <fieldset class="themeOptions">
+    <input style="display: none;" id="themeToggle" type="checkbox">
+    <label for="themeToggle" aria-hidden="true" class="themeLabel">️</label>
+  </fieldset>
+    <header style="display: flex; width: 100%; justify-content: center;">
+        <h1 style="justify-content: center; margin-top: 3vh;">PAGE UNDER CONSTRUCTION</h1>
+    </header>
+
      <main>
-        <a class="nav-button" href='index.html'">< BACK</a>
-        <pre class="ascii-art" aria-hidden="true">
+        
+        <section >
+            <figure>
+        <pre role="img" class="ascii-art" style="font-size: 2vw;" aria-label="under construction sign drawn in unicode characters">
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣿⡟⢻⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -27,15 +36,23 @@
 ⠀⠀⢀⣾⣿⡟⠀⠀⠀⣰⣿⠋⠀⣿⡇⠀⣴⣿⣿⣿⣿⣿⣿⣦⣻⣿⣷⡀⠀⠀⠀
 ⠀⢀⣿⣿⡟⠀⠀⠀⠀⠿⠃⠀⠀⠿⠧⠾⠿⠿⠿⠿⠿⠿⠿⠿⠷⠽⣿⣿⡄⠀⠀
 ⢠⣿⣿⣿⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣿⣿⣿⡄⠀
-⠈⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠁⠀
-        </pre>
-        <section>
-            <p>
-              This page is still being created.
-            </p>
-
-            <p> <em>Come back later! :)</em> </p>
-        </section>
+⠈⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠁</pre>
+</figure>
+    </section>
+    <section>
+        <p style="font-size: 2rem !important;">
+    This page is still being created. <em>Come back later!</em> :) 
+        </p>
+        <nav style="scale: 80%;">
+            <button onclick="window.location.href='index.html';">< BACK</a>
+        </nav>
+        <!-- <p> </p> -->
+    </section>
     </main>
+    <script>
+      const themeToggle = document.getElementById('themeToggle');
+      themeToggle.addEventListener('change', () => document.documentElement.dataset.theme = themeToggle.checked ? 'dark' : 'light');
+      themeToggle.checked = localStorage.theme === 'dark';
+    </script>
 </body>
 </html>
