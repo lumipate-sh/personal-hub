@@ -18,7 +18,7 @@
     <label for="themeToggle" aria-hidden="true" class="themeLabel">️</label>
   </fieldset>
 
-    <header>
+    <header id="panel-head">
         <pre role="img" class="ascii-art" aria-label="header spelling Luís Teixeira in a stylized header, drawn using ASCII characters">
  _                _        _______      _               _              
 | |             /_/       (__   __)    (_)             (_)             
@@ -29,19 +29,19 @@
 </pre>
     </header>
 
-    <nav class="menu">
+    <nav class="menu" id="panel-menu">
         <button onclick="window.location.href='index.html';">About</button>
         <button onclick="window.location.href='wip.html';">Projects</button>
         <button onclick="window.location.href='wip.html';">Skills</button>
         <button onclick="window.location.href='wip.html';">Tools</button>
     </nav>
 
-    <main>
-        <section class="column-left">
+    <main class="grid-container">
+        <section class="column-left" id="panel-img">
             <img class="side-img" width='100%' src="./assets/pixelart_profile.gif" alt="pixelart gif showing an ilustration of lumipate in the form of a playing card">
         </section>
 
-        <section class="column-center">
+        <section class="column-center" id="panel-main">
 
             <h1>Who am i?</h1>
             <p>
@@ -84,12 +84,12 @@
 
             <details>
               <summary><b>Word Weaver</b></summary>
-              <p>i have a way with words, spoken and written, and bend them to match the intended public, be it a
-                fantastical story to bring wonder to someone's day, or a concise report, to pass critical information in an
+              <p>i have a way with words, spoken and written, and bend them to match the intended public, be it a fantastical story to bring wonder to someone's day, or a concise report, to pass critical information in an
                 accessible and clear manner;</p>
             </details>
         </section>
-        <section class="column-right">
+
+        <section class="column-right" id="panel-info">
                <h3>Currently i am... </h3>
         <ul>
           <li>
@@ -113,7 +113,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="footer-panel">
        <p>this website was created in the context of an introductory web development class</p> 
        <p>2026, <strong>Luís Teixeira</strong></p>
      

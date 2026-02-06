@@ -17,8 +17,7 @@
 .themeOptions {
     position: fixed;
     top: 1%;
-    right: 1%;
-    display: flex;
+    right: 1%; display: flex;
     border-style: hidden;
     /* display: inline-flex; */
     justify-content: end;
@@ -72,11 +71,40 @@
     color: var(--bg-alt);
 }
 
+/* GRID STUFF */
+
+.grid-container{
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    gap: 3rem;
+    position: relative;
+}
+
+#panel-img{
+    grid-area: 'img';
+}
+
+#panel-main {
+    grid-area: 'main';
+}
+
+#panel-info{
+    grid-area: 'info';
+}
+
+
+
+
+/* NOW THE REST */
+
+
+
+
 * {
     transition: 0.2s;
 }
 
-/* NOW THE REST */
 
 html {
     font-size: 16px;
@@ -225,9 +253,9 @@ nav button:active {
 
 
 main {
-    display: flex;
+    /* display: flex; */
     /* min-width: 80%; */
-    gap: 3rem;
+    /* gap: 3rem; */
     /* max-width: 1000px; */
     /* margin: auto 10%; */
     flex-wrap: wrap;
@@ -295,11 +323,20 @@ footer {
 }
 
 
-@media (min-width: 90rem) {
+@media (min-width: 80rem) {
     main {
         width: 80%;
         margin: 0 10%;
     }
+
+    .grid-container {
+        grid-template-areas:
+            'img    main    main    info'
+    }
+    
+    
+
+
 }
 
 
@@ -309,11 +346,17 @@ footer {
 
 
 
-@media (max-width: 90rem) { 
-    main {
-        flex-direction: row;
-        /* flex-direction: column; */
+@media (max-width: 80rem) { 
+
+
+    
+
+    .grid-container {
+        grid-template-areas:
+            'img    main    main'
+            'info   info    info';
     }
+
     
     .themeLabel {
         background-color: var(--bg-alt);
@@ -338,7 +381,7 @@ footer {
     .ascii-art{
         display: none;
     }  
-    .side-img{
+    /* .side-img{
         max-width: 70%;
         align-self: center;
     } 
@@ -350,11 +393,18 @@ footer {
     }   
     .column-right {
         order: 3;
-    }
+    } */
 }
 
 @media (max-width: 37rem) {
-    main {
+
+    .grid-container {
+        grid-template-areas:
+            'main   main'
+            'info   info'
+            'img    img';
+    }
+    /* main {
         padding: 1rem;
         gap: 1rem;
     }   
@@ -364,5 +414,5 @@ footer {
     nav button {
         padding: 0.4rem 0.8rem;
         font-size: 0.9rem;
-    }
+    } */
 }
