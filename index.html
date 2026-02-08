@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lumipate's hub</title>
-    <meta name="description" content="lumipate's personal hub" />
-    <meta name="author" content="lumipate"/>
-    <link rel="icon" href="./assets/diamond.svg" type="image/svg" />
-    <link href="style.css" type='text/css' media='screen' rel="stylesheet" />
-    
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="lumipate's personal hub" />
+  <meta name="author" content="lumipate" />
+  <title>lumipate's hub</title>
+  <link rel="icon" href="./assets/diamond.svg" type="image/svg" />
+  <link href="style.css" type='text/css' media='screen' rel="stylesheet" />
 
 </head>
+
 <body>
 
-  <fieldset class="themeOptions">
-    <input style="display: none;" id="themeToggle" type="checkbox">
-    <label for="themeToggle" aria-hidden="true" class="themeLabel">️</label>
-  </fieldset>
 
-    <header>
-        <pre role="img" class="ascii-art" aria-label="header spelling Luís Teixeira in a stylized header, drawn using ASCII characters">
+
+  <div class="crt">
+     <!-- theme selection stuff -->
+
+
+  <section class="grid-container"> 
+      
+
+    <header class="header">
+
+        <pre aria-hidden="true">
  _                _        _______      _               _              
 | |             /_/       (__   __)    (_)             (_)             
 | |      _   _  _   ___      | |  ____  _  _   _  ____  _   ____  ____ 
@@ -29,102 +35,116 @@
 </pre>
     </header>
 
-    <nav class="menu">
-        <button onclick="window.location.href='index.html';">About</button>
+      <nav class="menu">
+        <button>About</button>
         <button onclick="window.location.href='wip.html';">Projects</button>
         <button onclick="window.location.href='wip.html';">Skills</button>
         <button onclick="window.location.href='wip.html';">Tools</button>
-    </nav>
+      </nav>
 
-    <main>
-        <section class="column-left">
-            <img class="side-img" width='100%' src="./assets/pixelart_profile.gif" alt="pixelart gif showing an ilustration of lumipate in the form of a playing card">
-        </section>
 
-        <section class="column-center">
+      <section class=" image-card">
+        <img src="./assets/pixelart_profile.gif"
+          alt="pixelart gif showing an ilustration of lumipate in the form of a playing card">
+      </section>
 
-            <h1>Who am i?</h1>
-            <p>
-              I pride myself in having a varied path and interests, and being
-              a bit of a modern polymath.
-            </p>
-            <p>
-              I have a natural curiosity to learn the inner workings of the world around me, and do so from multiple
-              perspectives.
-            </p>
 
-            <h2>What am i?</h2>
 
-            <details>
-              <summary><b>Apprentice Artificer</b></summary>
-              <p>After being a mere fledgeling observer of the computer world for most of my life, i recently launched myself into the world of software developnent.</p>
-            </details>
+      <main class="main-content">
+        <h1>Who am i?</h1>
+        <p>
+          I'm an analog soul living a digital life, doing my best to connect both. 
+        </p>
+        <p>
+          To create is to live, and my goal is to provide meaningful experiences to those around me through my creations.
+        </p>
 
-            <details>
-              <summary><b>Cybersecurity Squire</b></summary>
-              <p>My interest in cybersecurity is as old as my first computer, and i have worked towards keeping myself and
+        <h2>What am i? </h2>
+        
+        <details>
+          <summary><b>Apprentice Artificer</b></summary>
+          <p>After being a mere fledgeling observer of the computer world for most of my life, i recently launched myself into the world of software developnent.</p>
+        </details>
+       
+        <details>
+          <summary><b>Cybersecurity Squire</b></summary>
+            <p>My interest in cybersecurity is as old as my first computer, and i have worked towards keeping myself and
                 others e safe and informed, in order to foster a healthier digital life in my communities.</p>
-            </details>
+          </details>
 
-            <details>
-              <summary><b>Management Monk</b></summary>
-              <p>I've always sought to optimize my processes and systems, and find effective and elegant solutions to
-              problems around me. Having practiced a multitude of productivity methodologies, along with my varied
-                academic and professional path, i tend to have an unique perspective on the big picture, and approach each
-                team and
-                project uniquely.</p>
-            </details>
+          <details>
+            <summary><b>Management Monk</b></summary>
+            <p>I've always sought to optimize my processes and systems, and find effective and elegant solutions to
+            problems around me. Having practiced a multitude of productivity methodologies, along with my varied
+              academic and professional path, i tend to have an unique perspective on the big picture, and approach each
+              team and
+              project uniquely.</p>
+          </details>
+          <details>
+            <summary><b>Boardgame Bard</b></summary>
+            <p>There is an immense power in interactive experiences, both in personal growth and in creating bonds with
+              others. Narrative, competition, friendship... I cherish these games, and even create my own to
+              bring new, fun and meaningful experiences to others.</p>
+          </details>
+          <details>
+            <summary><b>Word Weaver</b></summary>
+            <p>i have a way with words, spoken and written, and bend them to match the intended public, be it a fantastical story to bring wonder to someone's day, or a concise report, to pass critical information in an
+              accessible and clear manner;</p>
+          </details>
+        </main>
 
-            <details>
-              <summary><b>Boardgame Bard</b></summary>
-              <p>There is an immense power in interactive experiences, both in personal growth and in creating bonds with
-                others. Narrative, competition, friendship... I cherish these games, and even create my own to
-                bring new, fun and meaningful experiences to others.</p>
-            </details>
 
-            <details>
-              <summary><b>Word Weaver</b></summary>
-              <p>i have a way with words, spoken and written, and bend them to match the intended public, be it a
-                fantastical story to bring wonder to someone's day, or a concise report, to pass critical information in an
-                accessible and clear manner;</p>
-            </details>
-        </section>
-        <section class="column-right">
-               <h3>Currently i am... </h3>
+
+
+      <section class="highlights">
+        <h2>Currently i am... </h2>
         <ul>
           <li>
-            developing software, both professionally and as a hobby;
+            developing software
           </li>
           <li>
-            working on a personal home server, to practice networking practices, and host software;
+            working on a homelab
           </li>
           <li>
-            <em>[ON HIATUS] </em>creating tabletop roleplaying games, under the name <a target="_blank"
-              href="https://linktr.ee/12sidedgoblin" class="links">12 Sided Goblin</a>.
+            <strong>[ON HIATUS]</strong> creating tabletop roleplaying games, under the name <a target="_blank"
+              href="https://linktr.ee/12sidedgoblin" class="links">12 Sided Goblin</a>
           </li>
         </ul>
         <p></p>
-        <h3>Talk to me at...</h3>
+        <h2>Find me at...</h2>
+        
         <ul>
+          <li><a class="links" href="http://www.github.com/lumipate-sh">Github</a>
           <li><a class="links" href="mailto:hello.lumi@pm.me">hello.lumi@pm.me</a>
           </li>
           <li><a target="_blank" href="https://ciberlandia.pt/@lumipate" class="links">Mastodon</a></li>
         </ul>
-        </section>
-    </main>
 
-    <footer>
-       <p>this website was created in the context of an introductory web development class</p> 
-       <p>2026, <strong>Luís Teixeira</strong></p>
-     
-    </footer>
+      </section>
 
-    <script>
-      const themeToggle = document.getElementById('themeToggle');
-      themeToggle.addEventListener('change', () => document.documentElement.dataset.theme = themeToggle.checked ? 'dark' : 'light');
-      themeToggle.checked = localStorage.theme === 'dark';
-    </script>
+      <footer class="footer">
+        <hr>
 
-    
+               <p>MMXXVI, <strong>Luís Teixeira</strong></p>
+               <a href="https://hinokodo.itch.io/human-made">
+                <img src="assets/hm_hand_black_circle_trans.svg" width="35px" alt="human made label, signaling that this project was made entirely without the intervention of generative artificial intelligence">
+              </a>
+      </footer>
+
+
+
+
+
+  </section>
+  <fieldset class="themeOptions">
+    <input style="display: none;" id="themeToggle" type="checkbox">
+    <label for="themeToggle" aria-hidden="true" class="themeLabel">️</label>
+  </fieldset>
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('change', () => document.documentElement.dataset.theme = themeToggle.checked ? 'dark' : 'light');
+    themeToggle.checked = localStorage.theme === 'dark';
+  </script>
 </body>
+
 </html>
